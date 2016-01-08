@@ -13,7 +13,7 @@ public class Budget {
 
     private Long id;
     private BigDecimal amount;
-    private Period period;
+    private Period period = new Period();
 
     @Id
     @GeneratedValue
@@ -37,7 +37,7 @@ public class Budget {
     }
 
     @NotNull
-    @OneToOne(optional = false, cascade = {CascadeType.ALL})
+    @OneToOne(optional = false, cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
     @JoinColumn(nullable = false, unique = true, updatable = false)
     public Period getPeriod() {
         return period;
@@ -46,4 +46,5 @@ public class Budget {
     public void setPeriod(Period period) {
         this.period = period;
     }
+
 }

@@ -15,6 +15,13 @@ public class Authority {
     private User user;
     private String value;
 
+    public Authority(){}
+
+    public Authority(User user, String value) {
+        setUser(user);
+        setValue(value);
+    }
+
     @Id
     @GeneratedValue
     public Long getId() {
@@ -27,6 +34,7 @@ public class Authority {
 
     @NotNull
     @ManyToOne(optional = false)
+    @JoinColumn(nullable = false, updatable = false)
     public User getUser() {
         return user;
     }

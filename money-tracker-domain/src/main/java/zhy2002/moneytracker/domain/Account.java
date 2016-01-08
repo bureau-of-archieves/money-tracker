@@ -13,6 +13,7 @@ public class Account {
     private Long id;
     private User user;
     private String name;
+    private Budget budget;
 
     @Id
     @GeneratedValue
@@ -43,6 +44,16 @@ public class Account {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @OneToOne(orphanRemoval = true, cascade = {CascadeType.ALL})
+    @JoinColumn(unique = true)
+    public Budget getBudget() {
+        return budget;
+    }
+
+    public void setBudget(Budget budget) {
+        this.budget = budget;
     }
 
     @Override

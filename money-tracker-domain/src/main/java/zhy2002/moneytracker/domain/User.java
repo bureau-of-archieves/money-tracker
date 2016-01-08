@@ -21,7 +21,7 @@ public class User {
     private String password;
     private Boolean enabled = Boolean.TRUE;
     private Set<Authority> authorities = new HashSet<>();
-    private Budget budget = new Budget();
+    private Budget budget;
 
     @Id
     @GeneratedValue
@@ -73,7 +73,7 @@ public class User {
         this.authorities = authorities;
     }
 
-   @OneToOne()
+   @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     public Budget getBudget() {
         return budget;
     }
