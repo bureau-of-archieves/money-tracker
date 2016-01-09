@@ -7,7 +7,7 @@ import zhy2002.moneytracker.domain.User;
 import zhy2002.moneytracker.service.service.UserService;
 
 /**
- * Created by JOHNZ on 8/01/2016.
+ * User related service operations.
  */
 @Service
 public class UserServiceImpl implements UserService {
@@ -16,6 +16,6 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     public User save(User user){
-        return userRepository.save(user);
+        return null;
     }
 }

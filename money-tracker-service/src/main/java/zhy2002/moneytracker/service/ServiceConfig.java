@@ -8,12 +8,10 @@ import zhy2002.moneytracker.data.DataConfig;
 
 
 /**
- * Created by JOHNZ on 8/01/2016.
+ * Spring configuration for the service layer.
  */
 @Configuration("service-configuration")
 @ComponentScan
-@Import(DataConfig.class)
 public class ServiceConfig {
-
 
 }

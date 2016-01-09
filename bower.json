@@ -1,0 +1,22 @@
+{
+  "name": "money-tracker",
+  "description": "- Spring Boot",
+  "main": "index.js",
+  "authors": [
+    "zhy2002 <hz141@uowmail.edu.au>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zhy2002/money-tracker",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular2-build": "~2.0.0-alpha.34"
+  }
+}
