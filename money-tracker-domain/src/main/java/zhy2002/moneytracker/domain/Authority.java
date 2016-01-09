@@ -65,8 +65,12 @@ public class Authority {
 
     @Override
     public int hashCode() {
-        int result = getUser().hashCode();
-        result = 31 * result + getValue().hashCode();
-        return result;
+        try {
+            int result = getUser().hashCode();
+            result = 31 * result + getValue().hashCode();
+            return result;
+        }catch (NullPointerException ex){
+            return 0;
+        }
     }
 }
