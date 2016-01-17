@@ -18,6 +18,11 @@
   "homepage": "https://github.com/zhy2002/money-tracker#readme",
   "devDependencies": {
     "bower": "^1.7.2",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-useref": "^3.0.4",
+    "gulp-util": "^3.0.7",
+    "wiredep": "^3.0.0"
   }
 }

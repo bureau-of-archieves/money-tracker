@@ -14,5 +14,5 @@
 # Maven
 log/
 target/
-node_modules/
-bower_components/
+money-tracker-webapp/src/client/node_modules/
+money-tracker-webapp/src/client/bower_components/
