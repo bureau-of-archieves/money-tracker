@@ -2,15 +2,14 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({lazy: true});
 var wiredep = require('wiredep').stream;
 
-var ROOT_DIR = './money-tracker-webapp/src/main/resources/public';
+var ROOT_DIR = './public';
 
 gulp.task('html', function(){
 
     log('Processing the main html file..');
     gulp.src(ROOT_DIR + '/index.html')
         .pipe($.plumber())
-        .pipe(wiredep({}))
-        .pipe($.useref({searchPath: './'}))
+        .pipe(wiredep({}))//.pipe($.useref({searchPath: './'}))
         .pipe(gulp.dest(ROOT_DIR));
 });
 
