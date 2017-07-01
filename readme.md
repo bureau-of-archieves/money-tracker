@@ -1,4 +1,5 @@
 
+Never got time to work on this. The repository contains only basic project setup.
 
 ##Dependencies
 ###Gulp dependencies
